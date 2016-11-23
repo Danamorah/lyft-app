@@ -1,6 +1,3 @@
-html, body { 
-    height: 100%; 
-}
 img{
     max-width: 100%;
 }
@@ -9,6 +6,7 @@ img{
     text-align: center;}
 .first-view{
     background-image: url(../images/line-commuters.232f9009.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
@@ -17,6 +15,7 @@ img{
 .btn{
     min-width: 100%;
 }
+
 .btn-primary{
     color: #fff;
     background-color: transparent;
@@ -26,7 +25,7 @@ img{
 .btn-primary:hover{
     color: #fff;
     background-color: #B80B8C;
-    border-color: #fff;
+    border-color: transparent;
 }
 .btn-lyft{
     color: #fff;
@@ -49,4 +48,24 @@ input.form-control{
 /*input { font-family: 'FontAwesome'; }*/
 .checkbox label{
     text-align: center;
+}
+ul{
+    padding-left: 3px;
+}
+li.pais-item{
+    list-style-type: none;
+    border-bottom: 1px solid #D1D1D1;
+}
+li.pais-item a{
+    display: block;
+    padding: 2%;
+    color: #333447;
+    text-decoration: none;
+    transition: .3s;
+}
+li.pais-item a:hover{
+    background-color: #e6e6e6;
+}
+li.pais-item span{
+    padding-left: 20px;
 }

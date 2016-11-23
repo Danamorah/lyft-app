@@ -39,7 +39,7 @@ for (var i = 0; i < paises.length ; i++){
     
 }
 
-$('#show-name span').html(obj_pais.nombre);
+//$('#show-name span').html(obj_pais.nombre);
 $('#show-name img').attr('src',obj_pais.bandera);
 //$('#show-name').html(obj_pais.bandera);
 $('#phone_digits').val(obj_pais.prefijo);
