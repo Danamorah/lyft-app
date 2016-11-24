@@ -15,38 +15,17 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
         <!-- my style -->
         <link rel="stylesheet" href="css/style.css">
-        <!-- my script -->
     </head>
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <div class="header">
-                        <h1>Sign Up</h1>
-                        <p>Join now fo free ride credits</p>
-                    </div>
-                    <div class="form-group">
-                        <!-- select -->
-                        <div class="col-xs-4">
-                           <a href="paises.html">
-                               <button class="btn" id="show-name">
-                                   <img src="images/CL.png" alt="">
-                               </button>
-                           </a>
-                        </div>
-                        <div class="col-xs-8">
-                            <input type="text" class="form-control" id="phone_digits">
-                        </div>
-                        <p class="text-center">We will send you a text to verify your phone</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-               <div class="col-xs-12">
-                   <a href="sign-up-2.html" class="btn btn-lyft">Next</a>
-               </div>
+            <div id="map"></div>
             </div>
         </div>
-        <script src="js/sign-up.js"></script>
+        <!-- my script -->
+       <!-- <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDbuTozgAW3-qXAB_RvaWvrOPkllsp9xm0&extension=.js'></script> -->
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbuTozgAW3-qXAB_RvaWvrOPkllsp9xm0&extension=.js"></script>  
+        <script src="js/map.js"></script>
     </body>
 </html>

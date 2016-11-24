@@ -50,18 +50,28 @@ $('#phone_digits').val(obj_pais.prefijo);
 
 ///validacion inputs//
 
+
+   
+    
+
+
 function validateForm(){
     var firstName = $('#name').val();
     var lastName = $('#last_name').val();
     var email = $('#email').val();
+    var patronEmail = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/ ;
     
-    if (firstname == "" || name.length > 30 ){
+    if (firstName == "" || name.length > 30 ){
         alert("invalid name");
     }
-    else if(lastName == "" || lastName.length > 30){
+    if(lastName == "" || lastName.length > 30){
         alert("invalid Lastname")
     }
-    else if(email =="" || lastName.length > 50 ){
+    if(email == "" || email.length > 50 || patronEmail.test(email)){
         alert("invalid email");
     }
 }
+
+$('#submit-form').on('click', function(){
+    validateForm();
+})

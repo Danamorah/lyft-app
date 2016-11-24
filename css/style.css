@@ -1,6 +1,9 @@
 img{
     max-width: 100%;
 }
+a:focus, a:hover{
+    color: #000;
+}
 
 .text-center{
     text-align: center;}
@@ -10,6 +13,10 @@ img{
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
+}
+
+.buttons{
+    padding-top: 90%;
 }
 
 .btn{
@@ -68,4 +75,23 @@ li.pais-item a:hover{
 }
 li.pais-item span{
     padding-left: 20px;
+}
+
+
+/* mapa */
+
+#map {
+    height:400px;
+    width:550px;
+}
+.gm-style-iw * {
+    display: block;
+    width: 100%;
+}
+.gm-style-iw h4, .gm-style-iw p {
+    margin: 0;
+    padding: 0;
+}
+.gm-style-iw a {
+    color: #4272db;
 }
